@@ -1,0 +1,97 @@
+/*...........................................
+
+FILENAME: main.css
+
+.............................................
+
+        TABLE OF CONTENTS
+    01. Navigation bar
+    02. Home section
+    03. About section
+    04. Services section
+    05. portfolio section
+    06. Contact section
+    07. Copyright section 
+    08. Media queries section
+
+
+...........................................*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root 
+{
+    --yellow:#ffcc0d;
+    --black:#000;
+    --white: #fff;
+    --light-bg:#eee;
+    --border-bold:.5rem solid var(--black);
+    --border-light:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+*::selection
+{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+*::-webkit-scrollbar
+{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    background-color: var(--yellow);
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    overflow: hidden;
+    transition: .2s linear !important;
+}
+
+
+/*=============================================
+    01. NAVIGATION BAR
+=============================================*/
+.header
+{
+    position: fixed;
+    width: 100%;
+    background-color: var(--yellow) !important;
+    padding: 25px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.header .logo
+{
+    font-weight: bolder;
+    font-size: 4.5rem;
+    color: darkblue;
+}
