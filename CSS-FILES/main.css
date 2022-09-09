@@ -75,6 +75,10 @@ body
     transition: .2s linear !important;
 }
 
+.containers#blur.active
+{
+    filter: blur(10px);
+}
 
 /*=============================================
     01. NAVIGATION BAR
